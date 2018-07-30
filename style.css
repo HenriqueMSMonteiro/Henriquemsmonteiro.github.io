@@ -1,0 +1,267 @@
+/* navbar */
+
+.navbar {min-height:51px !important;}
+
+.navbar-default {
+    background-color: #333333;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    height: 51px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #D3D3D3;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #D3D3D3;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #4682B4;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: blue;
+    border-bottom-color: blue;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: blue;
+    border-bottom-color: blue;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #4682B4;
+	color:white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #4682B4;
+}
+
+
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #EEE;
+    border-left: 1px solid #CCC
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #BAC0C4
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #717171
+}
+
+/* imagem foto perfil mudar */
+.watch {
+	display: inline-block;
+	margin-top:-80px;
+	position: relative;
+}
+
+.watch:hover::after {
+  visibility: visible
+}
+
+.watch img {
+  width: 100%
+}
+#myModal.modal-backdrop{
+    display: none;
+    }
+
+#myModal.modal{
+    bottom: inherit;
+    }
+
+.sino{
+	color:white;
+}
+
+.sino:hover  {
+    color:#4682B4;
+}
+
+.sinod{
+	color:white;
+}
+
+.sinod:hover  {
+    color:#D5D5D5;
+}
+
+
+
+        
+
+/* max-width  */
+@media screen and (max-width: 730px) {
+	.DESKTOP{
+		display:none;
+	}
+}
+@media screen and (min-width: 450px) {
+	.MOBILEINFERIOR{
+		display:none;
+	}
+}
+@media screen and (max-width: 450px) {
+	.MOBILE {
+		display:none;
+	}
+}
+
+@media screen and (min-width: 730px) {
+	.MOBILE {
+		display:none;
+	}
+}
+
+.dropdown-menu {
+  left: 50%;
+  right: -80px !important;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
+
+.dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  left: 142px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+/* Switch configuracoes*/
+/* Estilo iOS */
+.switch__container {
+  margin: 30px auto;
+  width: 48px;
+}
+
+.switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+​
+
+/* Estilo Flat */
+.switch--flat + label {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.switch--flat + label:before,
+.switch--flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+.switch--flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+.switch--flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 20px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+.switch--flat:checked + label {
+  background-color: #8ce196;
+}
+.switch--flat:checked + label:after {
+  margin-left: 20px;
+  background-color: #8ce196;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+	.navbar-nav > li > a {
+    padding-top:5px !important; 
+    padding-bottom:0 !important;
+    height: 30px;
+	}
+	
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: white;
+	  
+    }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: white;
+    }
+}
